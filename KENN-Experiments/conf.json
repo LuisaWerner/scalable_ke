@@ -1,0 +1,43 @@
+{
+  "configs": [
+    {
+      "dataset": "ogbn-products",
+      "planetoid_split": "public",
+      "device": 1,
+      "use_node_embedding": "store_true",
+      "sampling_neighbor_size": 10,
+      "batch_size": 20000,
+      "num_kenn_layers": 1,
+      "num_layers": 3,
+      "num_layers_sampling": 1,
+      "hidden_channels": 256,
+      "dropout": 0.5,
+      "lr": 0.01,
+      "epochs": 300,
+      "runs": 10,
+      "model": "GCN",
+      "mode": "transductive",
+      "save_results": "store_true",
+      "binary_preactivation": 500.0,
+      "range_constraint_lower": 0,
+      "range_constraint_upper": 500,
+      "es_enabled": true,
+      "es_min_delta": 0.001,
+      "es_patience": 10,
+      "full_batch": false,
+      "num_workers": 0,
+      "seed": 0,
+      "train_sampling": "default",
+      "cluster_partition_size": 15000,
+      "sample_coverage": 0,
+      "walk_length": 3,
+      "num_steps": 30,
+      "eval_steps": 10,
+      "save_data_stats": false,
+      "create_kb": true,
+      "subgraph_graph_saint": 20000,
+      "num_steps_graph_saint": 30,
+      "knowledge_base": "class_0,class_1,class_2,class_3,class_4,class_5\nCite\n\n>\n_:nclass_0(x),nCite(x.y),class_0(y)\n_:nclass_1(x),nCite(x.y),class_1(y)\n_:nclass_2(x),nCite(x.y),class_2(y)"
+    }
+  ]
+}

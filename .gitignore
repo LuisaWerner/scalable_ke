@@ -1,0 +1,6 @@
+/KENN-Experiments/dataset/
+
+/KENN-Experiments/results/
+/KENN-Experiments/runs/
+/KENN-Experiments/wandb/
+/ogb/nodeproppred/dataset/ogbn_arxiv/
